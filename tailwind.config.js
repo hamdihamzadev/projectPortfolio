@@ -11,6 +11,7 @@ export default {
     extend: {
       container: {
         center: true,
+        
       }
     },
   },
@@ -20,12 +21,14 @@ export default {
       addComponents({
         '.container': {
           width: '100%',
-          '@screen sm': { maxWidth: '100%' },
-          '@screen md': { maxWidth: '100%' },
-          '@screen lg': { maxWidth: '100%' },
-          '@screen xl': { 
-            maxWidth: 'calc(100% - 160px)', // 80px de chaque côté
+          '@media (max-width: 639px)': {
+            width: 'calc(100% - 32px)',
           },
+          '@screen sm': { maxWidth: '608px' },
+          '@screen md': { maxWidth: '688px' },
+          '@screen lg': { maxWidth: '944px' },
+          '@screen xl': { maxWidth: '1120px'},
+          '@screen xl': { maxWidth: '1376px'},
         },
       });
     },
