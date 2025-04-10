@@ -1,8 +1,8 @@
-import imgProfile from '../assets/img/profil.png'
-import bootstrapLogo from '../assets/img/bootstrap-logo.png'
-import vuejslogo from '../assets/img/vuejs-logo.png'
-import javascriptLogo from '../assets/img/javascript-logo.png'
-import githubLogo from '../assets/img/github-logo.png'
+import imgProfile from '../assets/imgs/profil.png'
+import bootstrapLogo from '../assets/imgs/bootstrap-logo.png'
+import vuejslogo from '../assets/imgs/vuejs-logo.png'
+import javascriptLogo from '../assets/imgs/javascript-logo.png'
+import githubLogo from '../assets/imgs/github-logo.png'
 function Banner() {
   return (
     <div id='Banner'>

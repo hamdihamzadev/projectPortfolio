@@ -10,38 +10,38 @@ const Education = [
     }
   ]
   
-  const Experience = [
-    {
-      job: 'Creative director',
-      date: '03-05-2022',
-      Worktasks: [
-          'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
-          'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
-          'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
-          'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
-      ]
-    },
-    {
-      job: 'Creative director',
-      date: '03-05-2022',
-      Worktasks: [
-          'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
-          'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
-          'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
-          'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
-      ]
-    },
-    {
-      job: 'Creative director',
-      date: '03-05-2022',
-      Worktasks: [
-          'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
-          'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
-          'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
-          'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
-      ]
-    },
-  ]
+  // const Experience = [
+  //   {
+  //     job: 'Creative director',
+  //     date: '03-05-2022',
+  //     Worktasks: [
+  //         'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
+  //         'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
+  //         'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
+  //         'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
+  //     ]
+  //   },
+  //   {
+  //     job: 'Creative director',
+  //     date: '03-05-2022',
+  //     Worktasks: [
+  //         'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
+  //         'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
+  //         'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
+  //         'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
+  //     ]
+  //   },
+  //   {
+  //     job: 'Creative director',
+  //     date: '03-05-2022',
+  //     Worktasks: [
+  //         'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
+  //         'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
+  //         'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
+  //         'Création de boutiques électroniques sur des plateformes comme WooCommerce et Shopify',
+  //     ]
+  //   },
+  // ]
   function Resume() {
     return (
       <div id="resume">

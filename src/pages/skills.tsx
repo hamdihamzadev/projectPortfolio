@@ -1,42 +1,90 @@
-import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
-
-function Compétences() {
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs"
+function Skills() {
   return (
-    <div id="compétences">
+    <div id="skills">
       <div className="container">
-        <div id="compétencesHeader">
-          <p>Mes compétences</p>
-          <h1>Ce que je maîtrise</h1>
-          <p>Voici un aperçu des compétences techniques, soft skills et outils que
-            j'utilise quotidiennement pour créer des expériences web exceptionnelles</p>
+        <div id="skills_header">
+          <Badge id="badge">
+          Mes compétences
+          </Badge>
+          <h1 id="title_setion">Ce que je maîtrise</h1>
+          <p id="subtile" >Voici un aperçu des compétences techniques, soft skills et outils que j'utilise quotidiennement pour créer des expériences web exceptionnelles</p>
         </div>
-        <div id="tabs_competences">
-          <Tabs>
-            <TabList>
-              <Tab>Title 1</Tab>
-              <Tab>Title 2</Tab>
-              <Tab>Title 2</Tab>
-              <Tab>Title 2</Tab>
-            </TabList>
+        <div id="skills_content" >
+        <Tabs defaultValue="account" className="w-[400px]">
+      <TabsList className="grid w-full grid-cols-2">
+        <TabsTrigger value="account">Account</TabsTrigger>
+        <TabsTrigger value="password">Password</TabsTrigger>
+      </TabsList>
+      <TabsContent value="account">
+        <Card>
+          <CardHeader>
+            <CardTitle>Account</CardTitle>
+            <CardDescription>
+              Make changes to your account here. Click save when you're done.
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-2">
+            <div className="space-y-1">
+              <Label htmlFor="name">Name</Label>
+              <Input id="name" defaultValue="Pedro Duarte" />
+            </div>
+            <div className="space-y-1">
+              <Label htmlFor="username">Username</Label>
+              <Input id="username" defaultValue="@peduarte" />
+            </div>
+          </CardContent>
+          <CardFooter>
+            <Button>Save changes</Button>
+          </CardFooter>
+        </Card>
+      </TabsContent>
+      <TabsContent value="password">
+        <Card>
+          <CardHeader>
+            <CardTitle>Password</CardTitle>
+            <CardDescription>
+              Change your password here. After saving, you'll be logged out.
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-2">
+            <div className="space-y-1">
+              <Label htmlFor="current">Current password</Label>
+              <Input id="current" type="password" />
+            </div>
+            <div className="space-y-1">
+              <Label htmlFor="new">New password</Label>
+              <Input id="new" type="password" />
+            </div>
+          </CardContent>
+          <CardFooter>
+            <Button>Save password</Button>
+          </CardFooter>
+        </Card>
+      </TabsContent>
+    </Tabs>
+        </div>
 
-            <TabPanel>
-              <h2>Any content 1</h2>
-            </TabPanel>
-            <TabPanel>
-              <h2>Any content 2</h2>
-            </TabPanel>
-            <TabPanel>
-              <h2>Any content 2</h2>
-            </TabPanel>
-            <TabPanel>
-              <h2>Any content 2</h2>
-            </TabPanel>
-          </Tabs>
-        </div>
       </div>
     </div>
   )
 }
 
-export default Compétences;
+export default Skills;
